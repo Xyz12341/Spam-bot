@@ -8,11 +8,11 @@ START_BUTTON = [
         Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")
     ],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/JARVIS_V_SUPPORT/5"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/Dora_Hub")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/Kittyxupdates"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/grandxmasti")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/doraemon890/JARVIS-X-SPAM")
+        Button.url("• 🇲σ᭡፝֟ɳ🌙 •", "https://t.me/Moonshining2")
     ]
 ]
 
@@ -34,13 +34,13 @@ async def start(event):
         bot_name = ANNIE.first_name
         bot_id = ANNIE.id
         TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [JARVIS](https://t.me/JARVIS_V2)**\n\n"
-        TEXT += f"» **ᴊᴀʀᴠɪs V2 :** `M 1.8.31`\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [🇲σ᭡፝֟ɳ🌙](https://t.me/Moonshining2)**\n\n"
+        TEXT += f"» **ᴍᴏᴏɴ :** `M 1.8.31`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
               event.chat_id,
-                    "https://github.com/doraemon890/JARVIS-X-SPAM/assets/155803358/f30a5777-9823-45d0-9860-342eceadb774",
+                    "https://telegra.ph/file/d557c20c6054491d2c20a.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
