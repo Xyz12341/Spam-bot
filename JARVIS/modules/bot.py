@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        jarvis = await e.reply(f"ᴥ︎︎︎ Moon ✔︎")
+        jarvis = await e.reply(f"» __🫧 🇲𝐎𝐎𝐍 𝐈ꜱ 𝐑ᴇᴀᴅʏ 𝐓ᴏ 𝐁ʀɪɴɢ 𝐂ʏᴄʟᴏɴᴇ⚡️⛈🌪__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await jarvis.edit(f"[Moon 𝐈𝐒 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎  ](https://t.me/kittyxupdates)[𝐅𝐔𝐂𝐊 𝐇𝐀𝐓𝐄𝐑𝐒 🥀](https://t.me/grandxmasti)🤖\n» `{mp} ᴍꜱ`")
+        await jarvis.edit(f"» __🫧 🇲𝐎𝐎𝐍 𝐈ꜱ 𝐑ᴇᴀᴅʏ 𝐓ᴏ 𝐁ʀɪɴɢ 𝐂ʏᴄʟᴏɴᴇ⚡️⛈🌪__\n» `{mp} ᴍꜱ`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`BOT IS RESTARTING PLEASE WAIT.`")
+        await e.reply(f"`🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ 𝐌ᴏᴏɴ 𝐁ᴏᴛꜱ★🥀...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __Moons Ka Ek Beta Aur Add Ho rha hai..__")
+        ok = await event.reply(f"» __🫧𝐘𝐨𝐮 𝐆𝐨𝐭 𝐒𝐮𝐝𝐨 𝐎𝐟 𝐓𝐡𝐞 𝐁𝐨𝐭⚡️⛈...__🚀🚀")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -113,21 +113,21 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except:
-            await ok.edit("» BSDK...REPLY KRKE KAR !!")
+            await ok.edit("» ⛈★𝐑ᴇᴘʟʏ  𝐓ᴏ 𝐀 𝐔ꜱᴇʀ★⛈ !!")
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"YE BHI Moon KA HI BACHA HAI.. !!")
+            await ok.edit(f"» 🫧★𝐘ᴏᴜ 𝐇ᴀᴠᴇ 𝐒ᴜᴅᴏ 𝐎ꜰ 𝐓ʜᴇ 𝐁ᴏᴛ★⚡️⛈ !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ADD KAR DIYE HAI SUDO..BOT RESTART HO RHA HAI`")
+            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 🥀★𝐑ᴇꜱᴛᴀʀᴛɪɴɢ 𝐌ᴏᴏɴ 𝐁ᴏᴛꜱ★🥀...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» BSDK SIRF Moon SUDO DE SKTA HAI...")
+        await event.reply("» 𝐒𝐎𝐑𝐑𝐘 𝐎𝐍𝐋𝐘 𝐌𝐎𝐎𝐍 𝐂𝐀𝐍 𝐀𝐂𝐂𝐄𝐒𝐒 𝐓𝐇𝐈𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 .")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
@@ -143,7 +143,7 @@ async def removesudo(event):
     if event.sender_id == OWNER_ID:
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
-        ok = await event.reply(f"YE Moon Ki Najayaz Aulad thi isiliye nikal diya...")
+        ok = await event.reply(f"» 🫧★𝐘ᴏᴜʀ 𝐒ᴜᴅᴏ 𝐇ᴀs 𝐁ᴇᴇɴ 𝐑ᴇᴍᴏᴠᴇᴅ.★⚡️ !!")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -163,10 +163,10 @@ async def removesudo(event):
             await ok.edit("User is not in the sudo list.")
         else:
             new_sudo_users = " ".join([user for user in sudousers.split() if user != str(target)])
-            await ok.edit(f"Removed sudo user: `{target}`")
+            await ok.edit(f"𝐑ᴇᴍᴏᴠᴇᴅ 𝐒ᴜᴅᴏ 𝐔ꜱᴇʀ: `{target}`")
             heroku_var["SUDO_USERS"] = new_sudo_users
     else:
-        await event.reply("Only Moon can remove sudo users.")
+        await event.reply("» 🥀★𝐎ɴʟʏ 𝐌ᴏᴏɴ 𝐂ᴀɴ 𝐑ᴇᴍᴏᴠᴇ 𝐒ᴜᴅᴏ 𝐔ꜱᴇʀ★🥀...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
@@ -180,12 +180,12 @@ async def removesudo(event):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
 async def show_sudo_users(event):
     if event.sender_id == OWNER_ID:
-        sudo_users_list = "Moon Ke Bache hai ye:\n"
+        sudo_users_list = "» 🥀★𝐓ʜᴇʏ 𝐀ʟʟ 𝐇ᴀᴠᴇ 𝐒ᴜᴅᴏ.★🥀...:\n"
         for user_id in SUDO_USERS:
             sudo_users_list += f"- {user_id}\n"
         await event.reply(sudo_users_list)
     else:
-        await event.reply("Only Jarvis view the sudo users list.")
+        await event.reply("» 🫧★𝐎ɴʟʏ 𝐌ᴏᴏɴ ᴠɪᴇᴡ 𝐓ʜᴇ 𝐒𝐮𝐝𝐨 𝐔ꜱᴇʀs 𝐋ɪsᴛ★⚡️⛈ !!.")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%saddmultisudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%saddmultisudo(?: |$)(.*)" % hl))
@@ -202,7 +202,7 @@ async def addmultisudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"Adding new sudo users...")
+        ok = await event.reply(f"» 🫧 𝐀ᴅᴅɪɴɢ 𝐍ᴇᴡ 𝐒𝐮𝐝𝐨 𝐔ꜱᴇʀs... ⛈ !!")
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
         else:
@@ -231,4 +231,4 @@ async def addmultisudo(event):
         
         await ok.edit(f"Added {len(target_ids)} new sudo users.")
     elif event.sender_id in SUDO_USERS:
-        await event.reply("Only Moon can add sudo users.")
+        await event.reply("» 𝐒𝐎𝐑𝐑𝐘 𝐎𝐍𝐋𝐘 𝐌𝐎𝐎𝐍 𝐂𝐀𝐍 𝐂𝐂𝐄𝐒𝐒 𝐓𝐇𝐈𝐒 𝐎𝐌𝐌𝐀𝐍𝐃 .")
