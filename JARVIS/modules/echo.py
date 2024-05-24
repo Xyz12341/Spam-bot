@@ -27,11 +27,11 @@ async def echo(event):
             user_id = reply_msg.sender_id
 
             if user_id in FRIDAY:
-                await event.reply("BSDK...BAAP HU TERA.")
+                await event.reply("🐬𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 🥂.")
             elif user_id == OWNER_ID:
-                await event.reply("BETA...BAAP PAR ECHO NHI KRTE...")
+                await event.reply("🌪️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💤 .")
             elif user_id in SUDO_USERS:
-                await event.reply("YE BHI MOON KA BACHA HAI ISPE ECHO MAT MARO.. !!.")
+                await event.reply("☄️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓💯.")
             else:
                 try:
                     alt = Get(base64.b64decode('QFRoZUFsdHJvbg=='))
@@ -42,10 +42,10 @@ async def echo(event):
                 global ECHO
                 check = f"{user_id}_{event.chat_id}"
                 if check in ECHO:
-                    await event.reply("» ECHO ACTIVATED HAI ISS CHUTIYE PAR !!")
+                    await event.reply("»⛈ 𝐄𝐂𝐇𝐎 𝐈𝐒 𝐀𝐋𝐑𝐄𝐀𝐃𝐘 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃 𝐎𝐍 𝐓𝐇𝐈𝐒 𝐔𝐒𝐄𝐑 ⛈ !!")
                 else:
                     ECHO.append(check)
-                    await event.reply("» ECHO ACTIVATED HAI ISS CHUTIYE PAR ✅")
+                    await event.reply("»⛈ 𝐄𝐂𝐇𝐎 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃 𝐎𝐍 𝐓𝐇𝐄 𝐔𝐒𝐄𝐑  ⛈ ✅")
         else:
             await event.reply(f"𝗘𝗰𝗵𝗼:\n  » {hl}echo <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -75,9 +75,9 @@ async def rmecho(event):
 
             if check in ECHO:
                 ECHO.remove(check)
-                await event.reply("» ECHO STOP HO GYA ISS USER PR.. !! ☑️")
+                await event.reply("» ⛈ 𝐄𝐂𝐇𝐎 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐒𝐓𝐎𝐏𝐏𝐄𝐃 𝐅𝐎𝐑 𝐓𝐇𝐄 𝐔𝐒𝐄𝐑  ⛈!! ☑️")
             else:
-                await event.reply("» ECHO STOP HO GYA ISS USER PR.. !!")
+                await event.reply("⛈ 𝐄𝐂𝐇𝐎 𝐈𝐒 𝐀𝐋𝐑𝐄𝐀𝐃𝐘 𝐃𝐈𝐒𝐀𝐁𝐋𝐄𝐃  ⛈!!")
         else:
             await event.reply(f"𝗥𝗲𝗺𝗼𝘃𝗲 𝗘𝗰𝗵𝗼:\n  » {hl}rmecho <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
