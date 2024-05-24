@@ -55,4 +55,4 @@ async def logs(ANNIE):
             await fetch.edit(f"An Exception Occured!\n\n**ERROR:** {str(e)}")
 
     elif ANNIE.sender_id in SUDO_USERS:
-        await ANNIE.reply("» BSDK..ISKO SIRF OWNER USE KR SKTA HAI...")
+        await ANNIE.reply("» 𝐒𝐎𝐑𝐑𝐘 𝐎𝐍𝐋𝐘 𝐌𝐎𝐎𝐍 𝐂𝐀𝐍 𝐀𝐂𝐂𝐄𝐒𝐒 𝐓𝐇𝐈𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.")
