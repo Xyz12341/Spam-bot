@@ -35,11 +35,11 @@ async def raid(e):
 
         try:
             if uid in FRIDAY:
-                await e.reply("REPO OWNER HAI YE.")
+                await e.reply("🐬𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 🥂")
             elif uid == OWNER_ID:
-                await e.reply("BETA BAAP PE RAID NHI KRTE HAI...")
+                await e.reply("🌪️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💤")
             elif uid in SUDO_USERS:
-                await e.reply("YE BHI MOON KA BACHA HAI ISPE RAID MAT MARO!...")
+                await e.reply("☄️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓💯")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -100,17 +100,17 @@ async def rraid(e):
         try:
             user_id = entity.id
             if user_id in FRIDAY:
-                await e.reply("Beta Repo Owner Hai ye , Gand Me Lund Daalke chla dega...")
+                await e.reply("🐬𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 🥂.")
             elif user_id == OWNER_ID:
-                await e.reply("Beta Dobara Kiya Nah Toh Jha se Nikle ho Whi Gaad diye jaoge🥱...")
+                await e.reply("🌪️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💤")
             elif user_id in SUDO_USERS:
-                await e.reply("YE BHI MOON KA BACHA HAI ISPE RAID MAT MARO!...")
+                await e.reply("☄️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓💯")
             else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
                 if check not in REPLY_RAID:
                     REPLY_RAID.append(check)
-                await e.reply("» LAG GYA REPLY RAID.. !! ✅")
+                await e.reply("»𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃 𝐑𝐄𝐏𝐋𝐘𝐑𝐀𝐈𝐃  !! ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}rraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}rraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -140,7 +140,7 @@ async def drraid(e):
             global REPLY_RAID
             if check in REPLY_RAID:
                 REPLY_RAID.remove(check)
-            await e.reply("» HAT GYA REPLY RAID !! ✅")
+            await e.reply("» 𝐑𝐄𝐏𝐋𝐘 𝐑𝐀𝐈𝐃 𝐃𝐄-𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃 !! ✅")
         except NameError:
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}drraid <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -246,11 +246,11 @@ async def qraid(e):
 
         try:
             if uid in FRIDAY:
-                await e.reply("Beta Repo Owner Hai ye , Gand Me Lund Daalke chla dega...")
+                await e.reply("🐬𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒 🥂 ")
             elif uid == OWNER_ID:
-                await e.reply("Beta Dobara Kiya Nah Toh Jha se Nikle ho Whi Gaad diye jaoge🥱...")
+                await e.reply("🌪️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐓𝐇𝐄 𝐎𝐖𝐍𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓𝐒💤")
             elif uid in SUDO_USERS:
-                await e.reply("YE BHI MOON KA BACHA HAI ISPE RAID MAT MARO!....")
+                await e.reply("☄️𝐍𝐎 , 𝐓𝐇𝐈𝐒 𝐆𝐔𝐘 𝐈𝐒 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 𝐎𝐅 𝐓𝐇𝐄 𝐁𝐎𝐓💯")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
